@@ -1,0 +1,79 @@
+<suite name="All Test Suite" parallel="tests" thread-count="3">
+    <!--<test name="Test1">
+        <parameter name="browser" value="chrome"/>
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestCases.LoginTest"/>
+            <class name="TestCases.CheckSidemenuSelection"/>
+            <class name="TestCases.CheckSideMenuOptionsTest"/>
+            <class name="TestCases.AttachFileForPersonalDetailTest"/>
+            <class name="TestCases.AddNewUserAndCheckLogin"/>
+            <class name="TestCases.AddaNewUserTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Test2">
+        <parameter name="browser" value="edge"/>
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestCases.LoginTest"/>
+            <class name="TestCases.CheckSidemenuSelection"/>
+            <class name="TestCases.CheckSideMenuOptionsTest"/>
+            <class name="TestCases.AttachFileForPersonalDetailTest"/>
+            <class name="TestCases.AddNewUserAndCheckLogin"/>
+            <class name="TestCases.AddaNewUserTest"/>
+        </classes>
+    </test>-->
+
+    <listeners>
+        <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"></listener>
+    </listeners>
+
+    <test name="Test1">
+        <parameter name="browser" value="chrome"/>
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestCases.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Test2">
+        <parameter name="browser" value="edge"/>
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestCases.CheckSidemenuSelection"/>
+        </classes>
+    </test>
+
+    <test name="Test3">
+        <parameter name="browser" value="chrome"/>
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestCases.CheckSideMenuOptionsTest"/>
+        </classes>
+    </test>
+</suite>
